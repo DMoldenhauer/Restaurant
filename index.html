@@ -2,25 +2,45 @@
 <html>
     <header>
         <title>Home Page</title>
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+                          <!-- Optional theme -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+                          <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
+
         <link href="restaurantStyles.css"
             rel="stylesheet"
             type="text/css" />
-
+            
     </header>
     <body>    
         
-        <div id="header">
+        <div class="jumbotron" id="header">
             <h1>Fred's Diner</h1><hr/>
+            <p>New Location:  1234 South Street in Verona!</p>
         </div>
         <div>
-            <p><a href="index.html">Home</a> &nbsp&nbsp <a href="Menu.html">Menu</a> &nbsp&nbsp <a href="Contact.html">Contact Us</a>
-            </p>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
             <hr/>
         </div>
         <div style="background-color:blanchedalmond; text-align:center;">
-            <br/>
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-xs-12"></div>
+                </div>
+                <br/>
                 <img src="images/fredsPic.jpg" alt="Fred's Diner building front image" width="400px" height="150px">
-            <table align="center" width="400" cellpadding="5" style="border: 1px solid black;">
+                <div class="row">
+                <div class="col-xs-12"></div>
+                </div>
+                <table align="center" cellpadding="5" style="border: 1px solid black;">
                 <tr>
                     <td>
                     Restaurant Description<br/>
@@ -28,7 +48,9 @@
                   </td>
                 </tr>
                 </table>
-<br/>
+
+            
+            </div>
             <hr/>
         </div>
         <div id="footer">

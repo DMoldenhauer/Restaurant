@@ -2,87 +2,148 @@
 <html>
     <header>
         <title>Menu</title>
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+                          <!-- Optional theme -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+                          <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
+
+
         <link href="restaurantStyles.css"
             rel="stylesheet"
             type="text/css" />
             <style>
-                    th {column-width:33pc
+                    th {text-align:center;
                     }
-                    td {text-align:center; font-size:x-small; column-width:33pc;     
+                    td {text-align:center; font-size:x-small;    
                     }
             </style>
     </header>
     <body>    
-        <div id="header">
+ 
+        <div class="jumbotron" id="header">
             <h1>Fred's Diner</h1><hr/>
+            <p>New Location:  1234 South Street in Verona!</p>
         </div>
         <div>
-            <p><a href="index.html">Home</a> &nbsp&nbsp <a href="Menu.html">Menu</a> &nbsp&nbsp <a href="Contact.html">Contact Us</a>
-            </p>
+            <ul class="nav nav-pills">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li class="active"><a href="Menu.html">Menu</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
             <hr/>
         </div>
-        <div align="center" style="background-color:blanchedalmond">
-            <table>
-                <tr>
-                    <th>Burgers and Fries</th><th>Hot Dogs and Chips</th><th>Italian Sausage and Peppers</th>
-                </tr>
-                <tr>
-                    <td>An American Classic</td><td>A Summer Classic</td><td>An All-Time Favorite!</td>
-                </tr>
-                <tr>
-                    <td>Your choice - with or without cheese</td><td>Your choice - white or wheat bun</td><td>Your choice - mild or spicy</td>
-                </tr>
-                <tr>
-                    <td>Pickle,onion, tomato and lettuce</td><td>Relish, mustard and ketchup</td><td>Cole Slaw</td>
-                </tr>
-                <tr>
-                    <td>Served with our famous thick cut french fries</td><td>Served with our house-made chips</td><td>Served with garlic mashers</td>
-                </tr>
-                <tr>
-                    <td>$7.95</td><td>$7.95</td><td>$10.95</td>
-                </tr>
-                <tr><td></td></tr>
-                <tr><td></td></tr>
-                <tr><td></td></tr>
-                <tr><td></td></tr>
+    
+        <div align="center">
+            <table class="table"style="background-color:blanchedalmond">
+                <thead>
                     <tr>
-                        <th>Tenderloin Sandwich and Chips</th><th>House Salad</th><th>Brisket Sandwich and Fries</th>
+                        <th class="col-xs-4">Burger and Fries</th>  
+                        <th class="col-xs-4">Hot Dog and Chips</th>
+                        <th class="col-xs-4">Italian Sausage and Peppers</th>
                     </tr>
+                </thead> 
+                
+                <tbody>
                     <tr>
-                        <td>Really Hits the Spot!</td><td>On the Lighter Side</td><td>A Taste of Texas!</td>
+                        <td>An American Classic</td>
+                        <td>A Summer Classic</td>
+                        <td>An All-Time Favorite!</td>
                     </tr>
+                  
                     <tr>
-                        <td>Plain or Sesame Seed Bun</td><td>Your choice - with or without cheese</td><td>Smoke Brisket on thick-cut Texas Toast</td>
-                    </tr>
-                    <tr>
-                        <td>Pickle,onion, tomato and lettuce</td><td>Iceberg lettuce, tomatoes, peppers Thousand Island or Ranch Dressing</td><td>Cole Slaw</td>
-                    </tr>
-                    <tr>
-                        <td>Served with our house-made chips</td><td>Served with a dinner roll</td><td>Served with our famous thick-cut french fries</td>
-                    </tr>
-                    <tr>
-                        <td>$8.95</td><td>$6.95</td><td>$7.95</td>
-                    </tr>
-                </table>
-                <hr/>
-                <table>
-                    <tr>
-                        <th>Beverages</th>
-                    </tr>
-                    <tr>
-                        <td>Root Beer</td><td>$3.00</td>
-                    <tr>
-                        <td>Bottledd Water</td><td>$1.25</td>
-                    </tr>
-                    <tr>
-                        <td>Lemonade</td><td>$1.00</td>
-                    </tr>
-                    <tr>
-                        <td>Iced Tea</td><td>$1.25</td>
+                        <td>Your choice - with or without cheese</td>
+                        <td>Your choice - white or wheat bun</td>
+                        <td>Your choice - mild or spicy</td>
                     </tr>
                     
-                </table>
-            <hr/>
+                    <tr>
+                        <td>Pickle,onion, tomato and lettuce</td>
+                        <td>Relish, mustard and ketchup</td>
+                        <td>Cole Slaw</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Served with our famous thick cut french fries</td>
+                        <td>Served with our house-made chips</td>
+                        <td>Served with garlic mashers</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>$7.95</td>
+                        <td>$7.95</td>
+                        <td>$10.95</td>
+                    </tr>
+                </tbody>
+
+                <thead>
+                    <tr>
+                        <th class="col-xs-4">Tenderloin Sandwich and Chips</th>
+                        <th class="col-xs-4">House Salad</th>
+                        <th class="col-xs-4">Brisket Sandwich and Fries</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Really Hits the Spot!</td>
+                        <td>On the Lighter Side</td>
+                        <td>A Taste of Texas!</td>
+                    </tr>
+                    <tr>
+                        <td>Plain or Sesame Seed Bun</td>
+                        <td>Your choice - with or without cheese</td>
+                        <td>Smoke Brisket on thick-cut Texas Toast</td>
+                    </tr>
+                    <tr>
+                        <td>Pickle,onion, tomato and lettuce</td>
+                        <td>Iceberg lettuce, tomatoes, peppers Thousand Island or Ranch Dressing</td>
+                        <td>Cole Slaw</td>
+                    </tr>
+                    <tr>
+                        <td>Served with our house-made chips</td>
+                        <td>Served with a dinner roll</td>
+                        <td>Served with our famous thick-cut french fries</td>
+                    </tr>
+                    <tr>
+                        <td>$8.95</td>
+                        <td>$6.95</td>
+                        <td>$7.95</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table class="table"style="background-color:blanchedalmond">
+                <thead>
+                    <tr>
+                        <th class="col-xs-6" colspan="2">Beverages</th>
+                    </tr>
+                </thead>
+          
+                <tbody>
+                    <tr>
+                        <td class=>Root Beer</td>
+                        <td class=>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td class=>Bottled Water</td>
+                        <td class=>$1.25</td>
+                    </tr>
+                    <tr>
+                        <td class=>Lemonade</td>
+                        <td class=>$1.00</td>
+                    </tr>
+                    <tr>
+                        <td class=>Iced Tea</td>
+                        <td class=>$1.25</td>
+                    </tr>
+                </tbody>  
+            </table>
+            
+           
         </div>
         <div id="footer">
             <p>1234 North State Street, Madison, WI, 55555
