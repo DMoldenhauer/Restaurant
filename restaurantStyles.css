@@ -17,3 +17,10 @@ a:hover {
 a:active {
     text-decoration: none; 
 }
+th {text-align:center; 
+}
+tr {text-align:center;
+}
+.carousel-inner {
+    background-color: red
+}
